@@ -86,7 +86,9 @@ function hps_add_custom_box() {
             'hps_sectionid',
             'Hide Posts Control',
             'hps_custom_box_html',
-            $type
+            $type,
+            'side',
+            'low'
         );
     }
 }
