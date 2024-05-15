@@ -8,33 +8,7 @@ Author: Stephen Russell
 Author URI:
 */
 
-// function hps_enqueue_block_editor_assets() {
-//     wp_enqueue_script(
-//         'hps-sidebar-script',
-//         plugins_url('sidebar.js', __FILE__),
-//         array('wp-plugins', 'wp-edit-post', 'wp-element', 'wp-components', 'wp-data'),
-//         filemtime(plugin_dir_path(__FILE__) . 'sidebar.js')
-//     );
-// }
-
-// add_action('enqueue_block_editor_assets', 'hps_enqueue_block_editor_assets');
-
-// function hps_register_meta() {
-//     register_post_meta('post', 'hide_from_site_search', [
-//         'show_in_rest' => true,
-//         'single' => true,
-//         'type' => 'boolean',
-//         'default' => false,
-//     ]);
-//     register_post_meta('post', 'hide_from_search_engines', [
-//         'show_in_rest' => true,
-//         'single' => true,
-//         'type' => 'boolean',
-//         'default' => false,
-//     ]);
-// }
-
-// add_action('init', 'hps_register_meta');
+if (!defined('ABSPATH')) exit;
 
 // Add menu page
 

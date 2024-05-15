@@ -6,8 +6,8 @@
             <tbody>
                 <?php foreach ($post_types as $post_type): ?>
                     <tr>
-                        <th scope="row"><?php echo esc_html($post_type->labels->name); ?></th>
-                        <td>
+                        <th scope="row" style="padding: 0;"><?php echo esc_html($post_type->labels->name); ?></th>
+                        <td style="padding: 5px;">
                             <input type="checkbox" name="hps_post_types[]" value="<?php echo esc_attr($post_type->name); ?>" 
                                 <?php checked(in_array($post_type->name, $enabled_post_types)); ?>>
                         </td>
